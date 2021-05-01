@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Load the Paper.js library -->
+
+<title>Makercast Thumbnail Generator</title>
+<meta name="description" content="Makercast Thumbnail Generator">
+
+<script type="text/javascript" src="paper-full.js"></script>
+<script type="text/javascript" src="opentype.js"></script>
+
+<!-- Define inlined PaperScript associate it with myCanvas -->
+<script type="text/javascript" src="generator.js">
+</script>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+</head>
+<body>
+    <img id="bg" src="bg.png" style="visibility:hidden; display:none;">
+
+    <div id="canvwrap">
+        <canvas id="myCanvas" ></canvas>
+	</div>
+	<div id="settingswrap">
+
+
+        
+        <input type="text" name="text" value="" oninput="addEpisode(value)" autocomplete="off" placeholder="42">
+        <input type="text" name="text" value="" oninput="addText(value)" autocomplete="off" placeholder="Douglas Adams">
+        <button class="darkhover" id="savesvg" value="#FFFFFF" onclick="downloadPNG()">Save Thumbnail</button>
+	 </div>
+
+
+
+
+</body>
+</html>
